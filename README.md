@@ -1,8 +1,12 @@
 # MongoDB module for Ninja framework
 
-TODO: add module overview
-TODO: add serialization overview
-TODO: add jongo benefits overview
+##THIS MODULE IS NOT REGISTERED IN MAVEN CENTRAL YET. TO USE IT - YOU NEED TO CLONE IT.
+
+## Overview
+
+This module filling the gap between Ninja framework and MongoDB. In a few simple steps 
+you can integrate MongoDB support into your application. 
+Beside this you get automatic object mapping provided by Jongo and Jackson libraries.
 
 ## Setup
 
