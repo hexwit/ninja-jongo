@@ -1,9 +1,6 @@
 package ninja.jongo;
 
 import com.google.inject.AbstractModule;
-import com.google.inject.Binding;
-import com.google.inject.matcher.AbstractMatcher;
-import com.google.inject.matcher.Matcher;
 import com.google.inject.matcher.Matchers;
 import org.jongo.Jongo;
 
@@ -19,8 +16,7 @@ public class NinjaJongoModule extends AbstractModule {
     protected void configure() {
         bind(Jongo.class).toProvider(JongoProvider.class);
 
-        MongoCollectionTypeListener listener = new MongoCollectionTypeListener();
-        requestInjection(listener);
+        MongoCollectionTypeListener listener = new MongoCollectionTypeListener(getProvider(JongoProvider.class));
 
         bindListener(Matchers.any(), listener);
     }
