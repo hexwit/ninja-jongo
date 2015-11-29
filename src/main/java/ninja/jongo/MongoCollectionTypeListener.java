@@ -10,6 +10,10 @@ import org.jongo.MongoCollection;
 import java.lang.reflect.Field;
 
 /**
+ * Type listener registering mongo collection
+ * injector for the fields, who has @InjectMongoCollection
+ * annotation.
+ *
  * Author: Aleksandr Savvopulo
  * Date: 17.10.2015
  */

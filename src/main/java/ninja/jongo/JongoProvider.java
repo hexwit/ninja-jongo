@@ -11,6 +11,9 @@ import org.jongo.Jongo;
 import java.net.UnknownHostException;
 
 /**
+ * Provider exposes access to the mongo client,
+ * and other related entities.
+ *
  * Author: Aleksandr Savvopulo
  * Date: 17.10.2015
  */

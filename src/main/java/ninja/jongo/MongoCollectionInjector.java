@@ -9,6 +9,10 @@ import org.jongo.MongoCollection;
 import java.lang.reflect.Field;
 
 /**
+ * Injector implementation responsible for
+ * setting proper MongoDBCollection instance to
+ * the fields, annotated appropriately.
+ *
  * Author: Aleksandr Savvopulo
  * Date: 21.10.2015
  */
