@@ -32,7 +32,7 @@ public class JongoProvider implements Provider<Jongo> {
             this.database = this.mongo.getDB(mongoProperties.getMongodbUri().getDatabase());
             this.jongo = new Jongo(this.database);
         } catch (UnknownHostException e) {
-            e.printStackTrace();
+            log.error("Host is unknown", e);
             throw new RuntimeException(e);
         }
     }
