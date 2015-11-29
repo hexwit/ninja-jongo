@@ -7,9 +7,6 @@ import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import ninja.utils.NinjaProperties;
 import org.jongo.Jongo;
-import org.jongo.MongoCollection;
-import org.slf4j.Logger;
-import org.slf4j.Marker;
 
 import java.net.UnknownHostException;
 
@@ -24,7 +21,7 @@ public class JongoProvider implements Provider<Jongo> {
     private Jongo jongo;
 
     @Inject
-    public JongoProvider(Logger log, NinjaProperties properties) {
+    public JongoProvider(NinjaProperties properties) {
         try {
             MongoClientProperties mongoProperties = MongoClientProperties.create(properties);
 
@@ -32,7 +29,6 @@ public class JongoProvider implements Provider<Jongo> {
             this.database = this.mongo.getDB(mongoProperties.getMongodbUri().getDatabase());
             this.jongo = new Jongo(this.database);
         } catch (UnknownHostException e) {
-            log.error("Host is unknown", e);
             throw new RuntimeException(e);
         }
     }
