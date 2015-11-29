@@ -45,13 +45,16 @@ To get access to mongo's collections you need just ask for injection, and provid
 
 ```java
 @Singleton
-public class UserController {
+public class UserDAO {
     @InjectMongoCollection(name = "users")
     MongoCollection users;
 
-    public Result index() {
-        //TODO: query 'users' collection
-        return Results.html();
+    public User getById(String userId) {
+        return users.findOne("{_id: #}", new ObjectId(userId)).as(User.class);
+    }
+    
+    public boolean isEmailRegistered(String email) {
+        return users.count("{email: #}", email) > 0;
     }
 }
 ```
