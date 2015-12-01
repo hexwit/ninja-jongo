@@ -1,7 +1,5 @@
 # MongoDB module for Ninja framework
 
-##THIS MODULE IS NOT REGISTERED IN MAVEN CENTRAL YET. TO USE IT - YOU NEED TO CLONE IT.
-
 ## Overview
 
 This module filling the gap between Ninja framework and MongoDB. In a few simple steps 
@@ -16,7 +14,7 @@ Add module dependency to you pom.xml:
 <dependency>
     <groupId>ninja.jongo</groupId>
     <artifactId>ninja-jongo-module</artifactId>
-    <version>1.0</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 
