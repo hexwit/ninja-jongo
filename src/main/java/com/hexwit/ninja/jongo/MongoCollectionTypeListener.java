@@ -1,10 +1,10 @@
-package ninja.jongo;
+package com.hexwit.ninja.jongo;
 
 import com.google.inject.Provider;
 import com.google.inject.TypeLiteral;
 import com.google.inject.spi.TypeEncounter;
 import com.google.inject.spi.TypeListener;
-import ninja.jongo.annotations.InjectMongoCollection;
+import com.hexwit.ninja.jongo.annotations.InjectMongoCollection;
 import org.jongo.MongoCollection;
 
 import java.lang.reflect.Field;

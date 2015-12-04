@@ -1,8 +1,8 @@
-package ninja.jongo;
+package com.hexwit.ninja.jongo;
 
 import com.google.inject.MembersInjector;
 import com.google.inject.Provider;
-import ninja.jongo.annotations.InjectMongoCollection;
+import com.hexwit.ninja.jongo.annotations.InjectMongoCollection;
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
 

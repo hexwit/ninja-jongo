@@ -1,4 +1,4 @@
-package ninja.jongo.annotations;
+package com.hexwit.ninja.jongo.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

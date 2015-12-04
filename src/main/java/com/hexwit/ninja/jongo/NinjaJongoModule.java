@@ -1,4 +1,4 @@
-package ninja.jongo;
+package com.hexwit.ninja.jongo;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.matcher.Matchers;

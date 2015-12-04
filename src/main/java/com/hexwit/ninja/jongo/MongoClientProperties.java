@@ -1,4 +1,4 @@
-package ninja.jongo;
+package com.hexwit.ninja.jongo;
 
 import com.mongodb.MongoClientURI;
 import ninja.utils.NinjaProperties;
