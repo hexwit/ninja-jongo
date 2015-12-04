@@ -12,7 +12,7 @@ Add module dependency to you pom.xml:
 
 ```xml
 <dependency>
-    <groupId>ninja.jongo</groupId>
+    <groupId>com.hexwit.ninja.jongo</groupId>
     <artifactId>ninja-jongo-module</artifactId>
     <version>1.0.0</version>
 </dependency>
